@@ -1,0 +1,64 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  background: #ff9966;
+  background-color: -webkit-linear-gradient(to rigth, #ff5e62, #ff9966);
+  -moz-linear-gradient(to rigth, #ff5e62, #ff9966);
+  -ms-linear-gradient(to rigth, #ff5e62, #ff9966);
+  -o-linear-gradient(to rigth, #ff5e62, #ff9966);
+  linear-gradient(to rigth, #ff5e62, #ff9966);
+  background: linear-gradient(to rigth, #ff5e62, #ff9966);
+}
+
+.contenedor{
+  background-color: white;
+  height: calc(100vh - 20px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 0 30px;
+}
+h1, h2{
+  text-align: center;
+  font-family: 'IMB Plex Serif', serif;
+}
+h2{
+  color: white;
+}
+/*AQUI ESTA EL DIV*/
+.contenedor-flex{
+  display: flex;
+  border: 3px solid red;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  /*
+  NORMAL
+  justify-content: flex-start;
+
+  AL ULTIMO
+  justify-content: flex-end;
+
+  CENTER
+  justify-content: center;
+
+  CENTRADO PERO CON ESPACIOS ENTRE MEDIO
+  justify-content: space-around;
+
+  Elimina los espacios de los inicios
+  justify-content: space-between;
+  */
+  height: 300px;
+}
+
+.elemento-flex{
+  padding: 10px;
+  background-color: #f53935;
+  align-items: flex-start;
+}
+.elemento-flex:nth-child(2){
+  background-color: #8e24aa;
+}
+.elemento-flex:nth-child(3){
+  background-color: #3f51b5;
+  align-items: stretch;
+}
